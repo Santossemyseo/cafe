@@ -1,0 +1,14 @@
+.home-section .home-content {
+    position: relative;
+    padding-top: 104px;
+}
+
+
+.home-content .sales-boxes{
+  justify-content: space-between;
+  /* padding: 0 20px; */
+}
+.title{
+    width: 2px;
+}
+  

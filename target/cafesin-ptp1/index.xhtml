@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"></link>
+        <link href="https://cdn.jsdelivr.net/npm/@tailwindcss/custom-forms@0.2.1/dist/custom-forms.css" rel="stylesheet"/>
+        <link rel="shorcut icon" href="img/cafe.ico"></link>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+
+        <header>
+            
+            <style>
+                #intro {
+                    background-image: url(https://www.tododisca.com/wp-content/uploads/2021/04/cafe-leche-propiedades.jpg);
+                    height: 100vh;
+                }
+                /* Height for devices larger than 576px */
+                @media (min-width: 100%) {
+                    #intro {
+                        margin-top: -58.59px;
+                    }
+                }
+            </style>
+            
+            <!-- Background image -->
+            <div id="intro" class="bg-image shadow-2-strong">
+                <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0, 0, 0, 0.8);">
+                    <div class="container">
+                        <div class="row d-flex justify-content-end">
+                            <div class="col-xl-5 col-md-18">
+                                <h:form class="bg-transparent  rounded-5 shadow-5-strong p-5">
+                                    <!-- Email input -->
+                                    <div class="form-outline mb-3">
+                                        <h:inputText value="#{loginBea.correo}" a:placeholder="correo" class="form-control" required="true"></h:inputText>
+                                    </div>
+                                    <!-- Password input -->
+                                    <div class="form-outline mb-4">
+                                        <h:inputSecret value="#{loginBea.pass}" a:placeholder="contraseña" class="form-control" required="true"></h:inputSecret>
+                                    </div>
+                                    <!-- 2 column grid layout for inline styling 
+                                    <div class="row mb-4">
+                                        <div class="col d-flex justify-content-center">
+                                           Checkbox 
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked="false" />
+                                                <label class="form-check-label text-white" for="form1Example3">
+                                                    Remember me
+                                                </label>
+                                            </div>
+                                        </div>
+                                       <div class="col text-center">
+                                             Simple link 
+                                            <a href="#!">Forgot password?</a>
+                                        </div>
+                                    </div>-->
+                                    <!-- Submit button -->
+                                    <div><h:commandButton action="#{loginBea.login()}" value="Ingresar" class="btn btn-primary btn-block"></h:commandButton>
+                                    </div><p class="form-check-label text-white">#{loginBea.msj}</p>
+                                </h:form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Background image -->
+        </header>
+        <!-- Background image -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <br />
+        
+    </h:body>
+</html>
+

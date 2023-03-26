@@ -1,0 +1,10 @@
+#intro {
+                    background-image: url(https://www.tododisca.com/wp-content/uploads/2021/04/cafe-leche-propiedades.jpg);
+                    height: 100vh;
+                }
+                /* Height for devices larger than 576px */
+                @media (min-width: 100%) {
+                    #intro {
+                        margin-top: -58.59px;
+                    }
+                }
